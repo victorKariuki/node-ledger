@@ -1,6 +1,6 @@
 const assert = require('assert');
 const { Entry } = require('../entry');
-const Memory = require('../adapters/memory');
+const { Memory } = require('../adapters');
 
 describe('Entry', () => {
   let adapter;

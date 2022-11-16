@@ -1,4 +1,4 @@
-const Memory = require('./adapters/memory');
+const { Memory } = require('./adapters/');
 const { Account } = require('./account');
 const { Transaction } = require('./transaction');
 

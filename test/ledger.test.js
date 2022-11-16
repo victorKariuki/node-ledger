@@ -1,6 +1,6 @@
 const assert = require('assert');
 const { Ledger } = require('../ledger');
-const Memory = require('../adapters/memory');
+const { Memory } = require('../adapters');
 
 describe('Ledger', () => {
   describe('constructor', () => {
@@ -63,7 +63,7 @@ describe('Ledger', () => {
       let ledger = new Ledger();
 
       await ledger.populate([
-        { code: 'asset', children: [ { code: 'bank' } ] },
+        { code: 'asset', children: [{ code: 'bank' }] },
         { code: 'equity' },
         { code: 'expenses' },
       ]);

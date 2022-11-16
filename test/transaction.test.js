@@ -1,6 +1,6 @@
 const assert = require('assert');
 const { Transaction } = require('../transaction');
-const Memory = require('../adapters/memory');
+const { Memory } = require('../adapters');
 
 describe('Transaction', () => {
   let adapter;

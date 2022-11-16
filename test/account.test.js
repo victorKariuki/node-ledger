@@ -1,7 +1,7 @@
 const assert = require('assert');
 const { Account } = require('../account');
 const { Ledger } = require('../ledger');
-const Memory = require('../adapters/memory');
+const { Memory } = require('../adapters');
 
 describe('Account', () => {
   let adapter;
